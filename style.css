@@ -4,10 +4,6 @@
   --soft-brown: #6f5a46;
   --dark-brown: #3f3226;
 }
-
-/* =======================
-   NAVBAR
-======================= */
 .navbar {
   background: var(--cream);
   padding: 18px 8%;
@@ -16,13 +12,11 @@
   z-index: 1000;
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
-
 .nav-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .logo {
   font-size: 22px;
   font-weight: 700;
@@ -30,12 +24,10 @@
   text-transform: uppercase;
   color: var(--dark-brown);
 }
-
 .nav-links {
   display: flex;
   gap: 28px;
 }
-
 .nav-links a {
   text-decoration: none;
   color: var(--soft-brown);
@@ -44,7 +36,6 @@
   position: relative;
   padding-bottom: 4px;
 }
-
 .nav-links a::after {
   content: "";
   position: absolute;
@@ -59,10 +50,6 @@
 .nav-links a:hover::after {
   width: 100%;
 }
-
-/* =======================
-   HERO
-======================= */
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
@@ -86,19 +73,16 @@
   margin-bottom: 20px;
   color: var(--dark-brown);
 }
-
 .hero-text {
   font-size: 17px;
   color: var(--soft-brown);
   max-width: 480px;
   margin-bottom: 30px;
 }
-
 .hero-buttons {
   display: flex;
   gap: 18px;
 }
-
 .btn-primary,
 .btn-secondary {
   padding: 14px 28px;
@@ -107,7 +91,6 @@
   font-weight: 600;
   transition: 0.3s ease;
 }
-
 .btn-primary {
   background: var(--soft-brown);
   color: white;
@@ -131,10 +114,6 @@
   width: 100%;
   border-radius: 12px;
 }
-
-/* =======================
-   FEATURED PRODUCTS
-======================= */
 .featured {
   padding: 90px 8%;
   background: var(--cream);
@@ -186,10 +165,6 @@
   font-weight: 600;
   color: var(--soft-brown);
 }
-
-/* =======================
-   BRAND STORY
-======================= */
 .brand-story {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -218,10 +193,6 @@
   border-radius: 14px;
   box-shadow: 0 20px 40px rgba(0,0,0,0.08);
 }
-
-/* =======================
-   CONTACT
-======================= */
 .contact-section {
   padding: 90px 8%;
   background: var(--cream);
@@ -259,10 +230,6 @@
   font-size: 15px;
   color: var(--soft-brown);
 }
-
-/* =======================
-   FOOTER
-======================= */
 .site-footer {
   background: var(--dark-brown);
   color: #f6f1eb;
@@ -270,10 +237,6 @@
   padding: 25px;
   font-size: 14px;
 }
-
-/* =======================
-   RESPONSIVE
-======================= */
 @media (max-width: 900px) {
   .hero,
   .brand-story {
@@ -292,4 +255,64 @@
   .contact-box {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 15px;
+  }
+
+  .navbar {
+    padding: 14px 6%;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .hero {
+    padding: 60px 6%;
+    gap: 40px;
+  }
+
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 15px;
+  }
+
+  .featured,
+  .brand-story,
+  .contact-section {
+    padding: 70px 6%;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .product-card {
+    padding: 20px;
+  }
+
+  .brand-story {
+    gap: 40px;
+  }
+  .story-content h2 {
+    font-size: 30px;
+  }
+  .contact-box {
+    gap: 28px;
+  }
+
 }
